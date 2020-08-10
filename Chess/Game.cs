@@ -26,7 +26,7 @@ namespace Chess
 
         internal bool active;
 
-        internal Peice[,] Gameboard;
+        public Peice[,] Gameboard;
         internal PSide turn;
 
         internal bool[] ischecked = new bool[2];
@@ -129,8 +129,8 @@ namespace Chess
             if (!is960)
             {
 
-            Gameboard = new Peice[8, 8]
-            {
+                Gameboard = new Peice[8, 8]
+                {
                     {new Peice(PType.Rook, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Rook, PSide.Black, this),},
                     {new Peice(PType.Knight, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Knight, PSide.Black, this),},
                     {new Peice(PType.Bishop, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Bishop, PSide.Black, this),},
@@ -139,17 +139,20 @@ namespace Chess
                     {new Peice(PType.Bishop, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Bishop, PSide.Black, this),},
                     {new Peice(PType.Knight, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Knight, PSide.Black, this),},
                     {new Peice(PType.Rook, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Rook, PSide.Black, this),},
-            };
+                };
 
             }
+
             //if it is 960
             else
             {
+                //get our types in an array to swap in
                 PType[] pTypes = { PType.Rook, PType.Knight, PType.Bishop, PType.Queen, PType.King, PType.Bishop, PType.Knight, PType.Rook }; ;
                 Random rng = new Random();
-                for (int i = 0; i < rng.Next(960); i++)
+                //randomly swap places
+                int rand = rng.Next(960);
+                for (int i = 0; i < rand; i++)
                 {
-
                     int first = rng.Next(7);
                     int second = rng.Next(7);
 
@@ -158,9 +161,8 @@ namespace Chess
                     //second
                     PType p2 = pTypes[second];
                     //swap
-                    pTypes[first] = p1;
-                    pTypes[second] = p2;
-
+                    pTypes[first] = p2;
+                    pTypes[second] = p1;
                 }
 
 
