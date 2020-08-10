@@ -4,3 +4,9 @@ C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\Git
 C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\csharp-chesslib\Chess\obj\Debug\Chess.csproj.CoreCompileInputs.cache
 C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\csharp-chesslib\Chess\obj\Debug\Chess.dll
 C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\csharp-chesslib\Chess\obj\Debug\Chess.pdb
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\Chess\bin\Debug\Chess.dll
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\Chess\bin\Debug\Chess.pdb
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\Chess\obj\Debug\Chess.csprojAssemblyReference.cache
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\Chess\obj\Debug\Chess.csproj.CoreCompileInputs.cache
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\Chess\obj\Debug\Chess.dll
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\Chess\obj\Debug\Chess.pdb

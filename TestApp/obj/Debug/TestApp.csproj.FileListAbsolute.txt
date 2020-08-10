@@ -11,3 +11,16 @@ C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\Git
 C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\csharp-chesslib\TestApp\obj\Debug\TestApp.csproj.CopyComplete
 C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\csharp-chesslib\TestApp\obj\Debug\TestApp.exe
 C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\csharp-chesslib\TestApp\obj\Debug\TestApp.pdb
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\bin\Debug\TestApp.exe.config
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\bin\Debug\TestApp.exe
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\bin\Debug\TestApp.pdb
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\bin\Debug\Chess.dll
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\bin\Debug\Chess.pdb
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\obj\Debug\TestApp.csprojAssemblyReference.cache
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\obj\Debug\TestApp.Form1.resources
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\obj\Debug\TestApp.exe
+C:\Users\Nancy Vega\OneDrive - Neumont College of Computer Science\Documents\GitHub\chess\TestApp\obj\Debug\TestApp.pdb
