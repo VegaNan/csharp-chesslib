@@ -143,6 +143,8 @@ namespace Chess
             if(is960)
             {
                 Random rng = new Random();
+                for( int i = 0; i < rng.Next(960); i++){
+
                 int first = rng.Next(7);
                 int second = rng.Next(7);
 
@@ -154,6 +156,7 @@ namespace Chess
                 Gameboard[first, 0] = p1;
                 Gameboard[second, 0] = p2;
 
+                }
             }
 
             //prepare moves for 1st turn
