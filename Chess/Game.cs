@@ -14,6 +14,7 @@ namespace Chess
 
         public enum EndGames {Check, Checkmate, Stalemate, Draw} //types of endgame
 
+        public bool is960 = false;
 
         #region Settings
         private int MOVECAP = 100; //inactive turns until draw offered
@@ -125,17 +126,35 @@ namespace Chess
             //reset board
             PieceList.Clear();
             TakenList.Clear();
-            Gameboard = new Peice[8, 8]
+
+                Gameboard = new Peice[8, 8]
+                {
+                    {new Peice(PType.Rook, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Rook, PSide.Black, this),},
+                    {new Peice(PType.Knight, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Knight, PSide.Black, this),},
+                    {new Peice(PType.Bishop, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Bishop, PSide.Black, this),},
+                    {new Peice(PType.Queen, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Queen, PSide.Black, this),},
+                    {new Peice(PType.King, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.King, PSide.Black, this),},
+                    {new Peice(PType.Bishop, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Bishop, PSide.Black, this),},
+                    {new Peice(PType.Knight, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Knight, PSide.Black, this),},
+                    {new Peice(PType.Rook, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Rook, PSide.Black, this),},
+                };
+            
+            //if it is 960
+            if(is960)
             {
-                {new Peice(PType.Rook, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Rook, PSide.Black, this),},
-                {new Peice(PType.Knight, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Knight, PSide.Black, this),},
-                {new Peice(PType.Bishop, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Bishop, PSide.Black, this),},
-                {new Peice(PType.Queen, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Queen, PSide.Black, this),},
-                {new Peice(PType.King, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.King, PSide.Black, this),},
-                {new Peice(PType.Bishop, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Bishop, PSide.Black, this),},
-                {new Peice(PType.Knight, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Knight, PSide.Black, this),},
-                {new Peice(PType.Rook, PSide.White, this), new Peice(PType.Pawn, PSide.White, this),null,null,null,null,new Peice(PType.Pawn, PSide.Black, this),new Peice(PType.Rook, PSide.Black, this),},
-            };
+                Random rng = new Random();
+                int first = rng.Next(7);
+                int second = rng.Next(7);
+
+                //first
+                Peice p1 = Gameboard[first, 0];
+                //second
+                Peice p2 = Gameboard[second, 0];
+                //swap
+                Gameboard[first, 0] = p1;
+                Gameboard[second, 0] = p2;
+
+            }
 
             //prepare moves for 1st turn
             foreach (Peice peice in getPeices(Gameboard, PSide.White))

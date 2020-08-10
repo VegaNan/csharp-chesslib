@@ -187,7 +187,14 @@ namespace TestApp
             }
         }
 
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            myGame.is960 = true;
+            myGame.ResetBoard();
+            PboxChess.Invalidate();
+            PBoxBlack.Invalidate();
+            PBoxWhite.Invalidate();
+            btn_reset.Enabled = false;
+        }
     }
 }

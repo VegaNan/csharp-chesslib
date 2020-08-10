@@ -37,6 +37,7 @@
             this.btn_reset = new System.Windows.Forms.Button();
             this.gbox_actions = new System.Windows.Forms.GroupBox();
             this.btn_draw = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PboxChess)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBoxWhite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBoxBlack)).BeginInit();
@@ -99,6 +100,7 @@
             // gbox_actions
             // 
             this.gbox_actions.BackColor = System.Drawing.Color.Transparent;
+            this.gbox_actions.Controls.Add(this.button1);
             this.gbox_actions.Controls.Add(this.btn_draw);
             this.gbox_actions.Controls.Add(this.btn_reset);
             this.gbox_actions.Location = new System.Drawing.Point(1026, 145);
@@ -117,6 +119,16 @@
             this.btn_draw.TabIndex = 6;
             this.btn_draw.Text = "Draw";
             this.btn_draw.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(19, 168);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 41);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "960";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -151,7 +163,7 @@
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.GroupBox gbox_actions;
         private System.Windows.Forms.Button btn_draw;
-
+        private System.Windows.Forms.Button button1;
     }
 }
 
